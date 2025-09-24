@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Move It Tanssiopisto</title>
+	<link rel="stylesheet" href="tyyli.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="img/logo.png" alt="Rytmi & Liike Tanssiopisto logo">
+		</div>
+		<nav class="desktop-nav">
+			<ul>
+				<li><a href="index.html" class="active">Etusivu</a></li>
+				<li><a href="kurssit.html">Kurssit ja aikataulut</a></li>
+				<li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+			</ul>
+		</nav>
+		<input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
+		<label for="mobile-menu-toggle" class="mobile-menu-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		<nav class="mobile-nav">
+			<ul>
+				<li><a href="index.html" class="active">Etusivu</a></li>
+				<li><a href="kurssit.html">Kurssit ja aikataulut</a></li>
+				<li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="paakuva">
+		<div class="overlay"></div>
+		<div class="content">
+			<h1>Move It Tanssiopisto</h1>
+			<p>Löydä oma rytmisi. Liiku, opi, loista!</p>
+			<a href="kurssit.html" class="btn">Tutustu kursseihimme</a>
+		</div>
+	</section>
+	<main>
+		<section class="intro">
+			<h2>Tervetuloa Move It Tanssiopistoon!</h2>
+			<p>Move It Tanssiopisto on tarjonnut laadukasta tanssin opetusta jo yli vuosikymmenen ajan. Meillä pääset kokemaan tanssin riemun ammattitaitoisten opettajien johdolla, olitpa sitten aloittelija tai kokenut tanssija. Tarjoamme monipuolisesti tunteja lapsista aikuisiin, useissa eri tanssilajeissa.</p>
+			<img src="img/etusivu_tanssisali.jpg" alt="Tanssiopiston sali">
+		</section>
+		<section class="myyntivaltit">
+			<div class="feature-card">
+				<svg class="feature-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chalkboard-teacher" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+					<path fill="currentColor" d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360s-27.98-2.7-40.95-6.91c-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38C320.33 402.48 270.06 352 208 352zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"/>
+				</svg>
+				<h3>Ammattitaitoiset opettajat</h3>
+				<p>Laadukas opetus ja innostava ilmapiiri.</p>
+			</div>
+			<div class="feature-card">
+				<svg class="feature-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="music" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+					<path fill="currentColor" d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53.02 0-96 28.66-96 64s42.98 64 96 64 96-28.66 96-64V214.32l256-75v184.61a139 139 0 0 0-32-3.93c-53.02 0-96 28.66-96 64s42.98 64 96 64 96-28.66 96-64V32a32 32 0 0 0-41.62-30.49z"/>
+				</svg>
+				<h3>Monipuoliset tanssityylit</h3>
+				<p>Baletti, hip hop ja nykytanssi.</p>
+			</div>
+			<div class="feature-card">
+				<svg class="feature-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+					<path fill="currentColor" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"/>
+				</svg>
+				<h3>Lämmin yhteisö</h3>
+				<p><br><br>Kannustava ja iloinen ilmapiiri kaikille.</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-content">
+			<div class="footer-column">
+				<h3>Rytmi & Liike</h3>
+				<p>© 2025 Rytmi & Liike Tanssiopisto. Kaikki oikeudet pidätetään.</p>
+			</div>
+			<div class="footer-column">
+				<h3>Yhteystiedot</h3>
+				<p>info@rytmijaliike.fi</p>
+				<p>+358 40 123 4567</p>
+				<p>Tanssikuja 1, 00100 Helsinki</p>
+			</div>
+			<div class="footer-column">
+				<h3>Seuraa meitä</h3>
+				<div class="footer-social">
+					<a href="#"><img src="img/ikoni_facebook.png" alt="Facebook"></a>
+					<a href="#"><img src="img/ikoni_instagram.png" alt="Instagram"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
