@@ -414,46 +414,78 @@ footer {
   /* Responsiivinen taulukko mobiilissa */
   .kurssit-lista table {
     font-size: 12px;
-    overflow-x: auto;
-    display: block;
-    white-space: nowrap;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
   }
   
-  .kurssit-lista thead,
-  .kurssit-lista tbody,
+  .kurssit-lista thead {
+    display: table-header-group;
+  }
+  
+  .kurssit-lista tbody {
+    display: table-row-group;
+  }
+  
   .kurssit-lista tr {
-    display: block;
+    display: table-row;
   }
   
   .kurssit-lista th,
   .kurssit-lista td {
-    padding: 8px 4px;
-    display: inline-block;
+    padding: 6px 2px;
+    display: table-cell;
     vertical-align: top;
-    white-space: normal;
-    width: auto;
-    min-width: 60px;
+    white-space: nowrap;
+    font-size: 10px;
   }
   
-  /* Tärkeimmät sarakkeet leveämmiksi */
+  /* Tasainen harmaa otsikkorivi ilman välejä */
+  .kurssit-lista thead {
+    background: #f5f5f5;
+  }
+  
+  .kurssit-lista th {
+    background: #f5f5f5;
+    margin: 0;
+    border: none;
+    font-size: 10px;
+  }
+  
+  /* Sarakkeiden leveydet prosentteina mobiilissa */
   .kurssit-lista th:nth-child(1),
   .kurssit-lista td:nth-child(1) {
-    min-width: 80px; /* Kurssin nimi */
+    width: 20%; /* Kurssin nimi */
+  }
+  
+  .kurssit-lista th:nth-child(2),
+  .kurssit-lista td:nth-child(2) {
+    width: 15%; /* Taso */
+  }
+  
+  .kurssit-lista th:nth-child(3),
+  .kurssit-lista td:nth-child(3) {
+    width: 15%; /* Opettaja */
   }
   
   .kurssit-lista th:nth-child(4),
   .kurssit-lista td:nth-child(4) {
-    min-width: 30px; /* Päivä */
+    width: 10%; /* Päivä */
   }
   
   .kurssit-lista th:nth-child(5),
   .kurssit-lista td:nth-child(5) {
-    min-width: 50px; /* Aika */
+    width: 20%; /* Aika */
   }
   
-  .kurssit-lista th:nth-child(8),
-  .kurssit-lista td:nth-child(8) {
-    min-width: 90px; /* Ilmoittaudu-nappi */
+  .kurssit-lista th:nth-child(6),
+  .kurssit-lista td:nth-child(6) {
+    width: 10%; /* Sali */
+  }
+  
+  .kurssit-lista th:nth-child(7),
+  .kurssit-lista td:nth-child(7) {
+    width: 10%; /* Hinta */
   }
   footer {
     padding: 20px 10px;
