@@ -3,7 +3,6 @@
 
 :root {
   --primary: #20B2AA;
-  --accent: #20B2AA;
   --gold: #FFD700;
   --dark: #333333;
   --light: #F5F5F5;
@@ -47,7 +46,7 @@ nav a {
 }
 nav a.active,
 nav a:hover {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .mobile-menu-checkbox {
@@ -126,7 +125,7 @@ nav a:hover {
 .mobile-nav a:hover,
 .mobile-nav a.active {
   background-color: var(--light);
-  color: var(--accent);
+  color: var(--primary);
 }
 
 main {
@@ -372,7 +371,7 @@ footer {
 }
 .feature-icon:hover {
   transform: scale(1.1);
-  color: var(--accent);
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -388,7 +387,7 @@ footer {
   }
   
   .desktop-nav {
-    display: none;;
+    display: none;
   }
   
   .mobile-menu-toggle {
@@ -413,10 +412,10 @@ footer {
   
   /* Responsiivinen taulukko mobiilissa */
   .kurssit-lista table {
-    font-size: 12px;
     width: 100%;
     display: table;
     table-layout: fixed;
+    font-size: 12px;
   }
   
   .kurssit-lista thead {
