@@ -99,14 +99,14 @@ nav a:hover {
   top: 100%;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   background: var(--white);
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   z-index: 1000;
-  max-width: 100vw;
   overflow-x: hidden;
   border-top: 3px solid var(--primary);
   animation: slideDown 0.3s ease-out;
+  box-sizing: border-box;
 }
 
 @keyframes slideDown {
@@ -426,8 +426,9 @@ footer {
   
   header {
     height: 60px;
-    padding: 0 20px;
+    padding: 0 15px;
     position: relative;
+    overflow: visible;
   }
   
   .desktop-nav {
@@ -437,6 +438,28 @@ footer {
   .mobile-menu-toggle {
     display: flex;
   }
+  
+  /* Valikko joka ei vuoda yli kapeilla näytöillä */
+  .mobile-nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .mobile-nav a {
+    padding: 12px 15px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
   main {
     padding: 20px 10px;
   }
@@ -543,5 +566,33 @@ footer {
   .footer-social img {
     width: 24px;
     height: 24px;
+  }
+}
+
+/* Erittäin kapeille näytöille (alle 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 0 10px;
+  }
+  
+  .mobile-nav a {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+}
+
+/* Erittäin kapeille näytöille (alle 360px) */
+@media (max-width: 360px) {
+  header {
+    padding: 0 8px;
+  }
+  
+  .mobile-nav a {
+    padding: 8px 10px;
+    font-size: 12px;
   }
 }
