@@ -180,7 +180,7 @@ main {
 }
 
 .paakuva {
-  background: url('img/etusivu_tanssija.png') center/cover no-repeat;
+  background: url('img/etusivu_tanssija.jpg') center/cover no-repeat;
   position: relative;
   height: 600px;
   width: 100%;
@@ -235,6 +235,7 @@ main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 30px;
 }
 
 .intro h2 {
@@ -252,11 +253,12 @@ main {
 
 .intro img {
   width: 100%;
-  max-width: 100%;
+  max-width: 1160px;
   height: auto;
-  max-height: 500px;
   border-radius: 8px;
-  margin-top: 20px;
+  margin: 20px auto 0;
+  display: block;
+  object-fit: cover;
 }
 
 .myyntivaltit {
@@ -395,6 +397,16 @@ footer {
   line-height: 1.5;
 }
 
+.footer-column a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 .footer-social {
   margin-top: 8px;
 }
@@ -410,6 +422,12 @@ footer {
   filter: brightness(0) invert(1);
 }
 
+.social-icons-yhteystiedot img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0);
+}
+
 .feature-icon {
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -418,7 +436,7 @@ footer {
   color: var(--primary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Estää horisontaalinen scrollaus */
   body {
     overflow-x: hidden;
@@ -569,30 +587,51 @@ footer {
   }
 }
 
-/* Erittäin kapeille näytöille (alle 480px) */
-@media (max-width: 480px) {
-  header {
-    padding: 0 10px;
-  }
-  
-  .mobile-nav a {
-    padding: 10px 12px;
-    font-size: 13px;
-  }
-  
-  .logo img {
-    height: 40px;
-  }
-}
 
-/* Erittäin kapeille näytöille (alle 360px) */
-@media (max-width: 360px) {
+/* Tiivis ratkaisu alle 440px näytöille - PYSTYSUUNTAINEN valikko */
+@media (max-width: 440px) {
   header {
-    padding: 0 8px;
+    padding: 0 15px;
+  }
+  
+  .mobile-nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .mobile-nav ul {
+    display: block;
+    padding: 4px 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .mobile-nav li {
+    display: block;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.8);
+    border-right: none;
+    margin: 0;
+  }
+  
+  .mobile-nav li:last-child {
+    border-bottom: none;
   }
   
   .mobile-nav a {
-    padding: 8px 10px;
-    font-size: 12px;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: left;
+    white-space: nowrap;
+    display: block;
+    margin: 0;
+    background: var(--white);
+    width: 100%;
+    box-sizing: border-box;
   }
 }
