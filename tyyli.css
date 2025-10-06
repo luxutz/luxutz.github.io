@@ -346,7 +346,7 @@ main {
   border-bottom: none;
 }
 .btn {
-  background: var(--primary);
+  background: #0F6B6A; /* Kontrastin takia eri väri kuin --primary */
   color: var(--white);
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
@@ -360,7 +360,7 @@ main {
   box-shadow: none;
 }
 .btn:hover {
-  background: #0F6B6A;
+  background: #0A5858; /* Kontrastin takia eri väri kuin --primary */
 }
 
 footer {
