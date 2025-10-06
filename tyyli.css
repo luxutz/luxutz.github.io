@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 :root {
-  --primary: #158B8A;
+  /* vanha--primary: #158B8A;*/
+  --primary: #0F6B6A;
   --dark: #333333;
   --light: #F5F5F5;
   --white: #FFFFFF;
@@ -47,7 +48,7 @@ nav a {
 }
 nav a.active,
 nav a:hover {
-  color: #0F6B6A;
+  color: var(--primary);
 }
 
 .mobile-menu-checkbox {
@@ -179,10 +180,9 @@ main {
   padding: 0 20px 40px 20px;
 }
 
-/* Hero-taustakuva omana elementtinä */
 .paakuva-background {
   position: absolute;
-  top: 80px; /* Header-korkeus huomioituna */
+  top: 80px;
   left: 0;
   width: 100vw;
   height: 600px;
@@ -201,7 +201,6 @@ main {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%);
 }
 
-/* Hero-sisältö omana elementtinä */
 .paakuva {
   position: relative;
   height: 600px;
