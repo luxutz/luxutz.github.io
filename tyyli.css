@@ -3,8 +3,6 @@
 
 :root {
   --primary: #158B8A;
-  --gold: #DAA520;
-  --gold-dark: #a17a17;
   --dark: #333333;
   --light: #F5F5F5;
   --white: #FFFFFF;
@@ -47,7 +45,7 @@ nav a {
 }
 nav a.active,
 nav a:hover {
-  color: var(--primary);
+  color: #0F6B6A;
 }
 
 .mobile-menu-checkbox {
@@ -183,7 +181,9 @@ main {
   background: url('img/etusivu_tanssija.jpg') center/cover no-repeat;
   position: relative;
   height: 600px;
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
 
 .paakuva .overlay {
@@ -346,7 +346,7 @@ main {
   border-bottom: none;
 }
 .btn {
-  background: var(--gold);
+  background: var(--primary);
   color: var(--white);
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
@@ -360,7 +360,7 @@ main {
   box-shadow: none;
 }
 .btn:hover {
-  background: var(--gold-dark);
+  background: #0F6B6A;
 }
 
 footer {
