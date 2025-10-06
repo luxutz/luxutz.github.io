@@ -347,7 +347,7 @@ main {
   background: var(--light);
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 18px;
-  color: var(--primary);
+  color: var(--dark);
 }
 .kurssit-lista tr:last-child td {
   border-bottom: none;
