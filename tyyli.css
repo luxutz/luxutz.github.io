@@ -27,6 +27,7 @@ header {
 }
 .logo img {
   height: 70px;
+  width: auto;
 }
 .desktop-nav ul {
   list-style: none;
