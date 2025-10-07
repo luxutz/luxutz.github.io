@@ -182,7 +182,7 @@ main {
 
 .paakuva {
   position: relative;
-  top: -20px;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 600px;
@@ -469,6 +469,17 @@ footer {
     overflow-x: hidden;
   }
   
+  .paakuva {
+    top: -20px;
+  }
+
+  .intro {
+    margin-top: -80px;
+    padding: 10px 40px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .mobile-nav a {
     padding: 12px 15px;
     font-size: 14px;
