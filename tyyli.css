@@ -1,9 +1,12 @@
 :root {
-  /* vanha--primary: #158B8A;*/
   --primary: #0F6B6A;
   --dark: #333333;
   --light: #F5F5F5;
   --white: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -180,7 +183,7 @@ main {
   padding: 0 20px 40px 20px;
 }
 
-.paakuva {
+.hero {
   position: relative;
   top: 0;
   left: 0;
@@ -198,7 +201,7 @@ main {
   z-index: 1;
 }
 
-.paakuva .overlay {
+.hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -208,18 +211,18 @@ main {
   z-index: 1;
 }
 
-.paakuva h1 {
+.hero h1 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
   position: relative;
   z-index: 2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.7);
   color: #FEFEFE;
 }
 
-.paakuva h2 {
+.hero h2 {
   font-size: 24px;
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: normal;
@@ -230,7 +233,7 @@ main {
   color: #FEFEFE;
 }
 
-.paakuva .btn {
+.hero .btn {
   font-size: 18px;
   position: relative;
   z-index: 2;
@@ -273,7 +276,7 @@ main {
   object-fit: cover;
 }
 
-.myyntivaltit {
+.features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -281,7 +284,7 @@ main {
   margin: 60px 0;
 }
 
-.myyntivaltit .feature-card {
+.features .feature-card {
   background: var(--light);
   padding: 20px;
   border-radius: 8px;
@@ -292,21 +295,21 @@ main {
   text-align: center;
 }
 
-.myyntivaltit .feature-icon {
+.features .feature-icon {
   width: 48px;
   height: 48px;
   margin-bottom: 12px;
   color: var(--primary);
 }
 
-.myyntivaltit h3 {
+.features h3 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 24px;
   color: var(--dark);
   font-weight: 500;
 }
 
-.myyntivaltit p {
+.features p {
   font-size: 16px;
 }
 
@@ -386,7 +389,7 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   gap: 40px;
 }
 
@@ -473,7 +476,7 @@ footer {
     overflow-x: hidden;
   }
   
-  .paakuva {
+  .hero {
     top: -20px;
   }
 
