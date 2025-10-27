@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Move It Tanssiopisto tarjoaa monipuolisia tanssikursseja kaikenikäisille.">
+  <title>Yhteystiedot | Move It Tanssiopisto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="Rytmi & Liike Tanssiopisto logo"></a>
+    </div>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="hinnasto.html">Hinnasto</a></li>
+        <li><a href="opettajat.html">Opettajat</a></li>
+        <li><a href="kurssit.html">Kurssit ja aikataulut</a></li>
+        <li><a href="yhteystiedot.html" class="active">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
+    <label for="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Avaa mobiilivalikko">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="hinnasto.html">Hinnasto</a></li>
+        <li><a href="opettajat.html">Opettajat</a></li>
+        <li><a href="kurssit.html">Kurssit ja aikataulut</a></li>
+        <li><a href="yhteystiedot.html" class="active">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-info">
+      <h1>Yhteystiedot, ilmoittautuminen ja saapuminen</h1>
+      <h2>Ota yhteyttä</h2>
+      <p>Meihin saat parhaiten yhteyden puhelimitse tai sähköpostitse. Vastaamme mielellämme kysymyksiisi!</p>
+      <ul>
+        <li>Puhelin: <a style="color: var(--primary);" href="tel:+358451234567">+358 45 1234567</a></li>
+        <li>Sähköposti: <a style="color: var(--primary);" href="mailto:info@move-it.fi">info@move-it.fi</a></li>
+        <li>Käyntiosoite: <a style="color: var(--primary);" href="https://maps.google.com/?q=Töölönkatu+35,+00260+Helsinki" target="_blank">Töölönkatu 35, 00260 Helsinki</a></li>
+      </ul>
+      <h2>Aukioloajat ja palvelut</h2>
+      <p>Asiakaspalvelu on avoinna arkisin klo 15–20 sekä tuntien alkaessa. Vastaanotto sijaitsee pääsisäänkäynnin yhteydessä.</p>
+      <ul>
+        <li>Vaatelokerot ja pukuhuoneet löytyvät salejen 1–3 vierestä.</li>
+        <li>Vettä ja pientä välipalaa voit ostaa aulakahviosta.</li>
+        <li>Unohtuneita tavaroita säilytetään vastaanotossa viikon ajan.</li>
+      </ul>
+      
+      <h2>Ilmoittautuminen kursseille</h2>
+      <p>Ilmoittautuminen kursseillemme tapahtuu helpoiten sähköpostin kautta. Kerro viestissä nimesi, puhelinnumerosi, aiempi kokemuksesi sekä kurssi (laji, taso ja ajankohta). Suosittelemme reilua varaslähtöä – paikat täyttyvät nopeasti.</p>
+      
+      <h2>Saapuminen</h2>
+      <p>Raitiovaunut ja bussit pysähtyvät 3–5 minuutin kävelymatkan päässä. Polkupyörätelineet löytyvät sisäänkäynnin vierestä. Autolla saapuessa kadunvarsipaikat ovat yleensä parhaita (maksullisia arkisin klo 9–21).</p>
+      
+      <h2>Esteettömyys</h2>
+      <p>Studion pääsisäänkäynti on esteetön ja tiloissa on inva-wc. Tarvittaessa järjestämme opettajan avustamaan siirtymisissä – olethan yhteydessä etukäteen.</p>
+      <h2>Löydät meidät täältä</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.933463860357!2d24.920761077470225!3d60.18183354249216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a2589f9321d%3A0x5bd470d54460bee3!2zVMO2w7Zsw7Zua2F0dSAzNSwgMDAyNjAgSGVsc2lua2k!5e0!3m2!1sen!2sfi!4v1758670001886!5m2!1sen!2sfi" 
+        width="1200" 
+        height="300" 
+        style="border:0; max-width:100%;" 
+        allowfullscreen="" 
+        loading="lazy"
+        title="Move It Tanssiopiston sijainti kartalla">
+      </iframe>
+
+      <h2>Seuraa meitä somessa!</h2>
+      <div class="social-icons-yhteystiedot">
+        <a href="https://facebook.com" target="_blank"><img src="img/ikoni_facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="img/ikoni_instagram.png" alt="Instagram"></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+		<div class="footer-content">
+			<div class="footer-column">
+				<h3>Rytmi & Liike</h3>
+				<p>© 2025 Rytmi & Liike Tanssiopisto. Kaikki oikeudet pidätetään.</p>
+			</div>
+			<div class="footer-column">
+				<h3>Yhteystiedot</h3>
+				<p><a href="mailto:info@move-it.fi">info@move-it.fi</a></p>
+				<p><a href="tel:+358451234567">+358 45 1234567</a></p>
+				<p><a href="https://maps.google.com/?q=Töölönkatu+35,+00260+Helsinki" target="_blank">Töölönkatu 35, 00260 Helsinki</a></p>
+			</div>
+			<div class="footer-column">
+				<h3>Seuraa meitä</h3>
+				<div class="footer-social">
+					<a href="https://facebook.com" target="_blank"><img src="img/ikoni_facebook.png" alt="Facebook"></a>
+					<a href="https://instagram.com" target="_blank"><img src="img/ikoni_instagram.png" alt="Instagram"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+  <script src="script.js"></script>
+</body>
+</html>
