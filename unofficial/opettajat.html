@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tapaa Move It Tanssiopiston opettajat.">
+  <title>Opettajat | Move It Tanssiopisto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="Rytmi & Liike Tanssiopisto logo"></a>
+    </div>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="hinnasto.html">Hinnasto</a></li>
+        <li><a href="opettajat.html" class="active">Opettajat</a></li>
+        <li><a href="kurssit.html">Kurssit ja aikataulut</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
+    <label for="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Avaa mobiilivalikko">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="hinnasto.html">Hinnasto</a></li>
+        <li><a href="opettajat.html" class="active">Opettajat</a></li>
+        <li><a href="kurssit.html">Kurssit ja aikataulut</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="teachers-intro">
+      <h1>Tapaa opettajamme</h1>
+      <p>Opettajamme ovat koulutettuja ammattilaisia ja aktiivisia esiintyjiä. Yhteinen tavoitteemme on turvallinen, kannustava ja tavoitteellinen oppimisympäristö – aloittelijoista edistyneisiin. Alta löydät tiivistiedot opettajistamme.</p>
+    </section>
+
+    <section class="teachers-grid">
+      <article class="teacher-card">
+        <div class="avatar" data-initials="A"></div>
+        <h3>Anna Korhonen</h3>
+        <p>Entinen ammattilaisbalettitanssija, jolla on yli 10 vuoden opetuskokemus. Annan tunneilla painotetaan tarkkaa tekniikkaa, linjauksia ja turvallista tekemistä.</p>
+      </article>
+      <article class="teacher-card">
+        <div class="avatar" data-initials="S"></div>
+        <h3>Sofia Niemi</h3>
+        <p>Jatkotasoista ja repertuaarityöskentelystä innostunut opettaja. Sofia kehittää esiintymistaitoja ja musikaalisuutta motivoivilla yhdistelmillä.</p>
+      </article>
+      <article class="teacher-card">
+        <div class="avatar" data-initials="M"></div>
+        <h3>Mikko Lehtinen</h3>
+        <p>Monipuolinen katutanssin osaaja, jonka tunneilla rytmi ja flow ovat keskiössä. Mikko huomioi eri lähtötasot ja tekee treenistä tavoitteellista ja hauskaa.</p>
+      </article>
+      <article class="teacher-card">
+        <div class="avatar" data-initials="J"></div>
+        <h3>Joonas Salmi</h3>
+        <p>Rohkaisee löytämään oman tyylin ja kehittää ilmaisua. Tekniikka ja musikaalisuus kulkevat käsikkäin – turvallisuus ja ilo edellä.</p>
+      </article>
+      <article class="teacher-card">
+        <div class="avatar" data-initials="L"></div>
+        <h3>Laura Virtanen</h3>
+        <p>Lauran tunneilla tutkitaan kehonpainoa, lattiatekniikkaa ja improvisaatiota. Lempeä ja tavoitteellinen ilmapiiri tukee kehittymistä.</p>
+      </article>
+      <article class="teacher-card">
+        <div class="avatar" data-initials="E"></div>
+        <h3>Emilia Koski</h3>
+        <p>Keskittyy kokonaisvaltaiseen harjoitteluun. Tavoitteena on liikkeen vapaus, kestävä voima ja palautuminen.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Rytmi & Liike</h3>
+        <p>© 2025 Rytmi & Liike Tanssiopisto. Kaikki oikeudet pidätetään.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Yhteystiedot</h3>
+        <p><a href="mailto:info@move-it.fi">info@move-it.fi</a></p>
+        <p><a href="tel:+358451234567">+358 45 1234567</a></p>
+        <p><a href="https://maps.google.com/?q=Töölönkatu+35,+00260+Helsinki" target="_blank">Töölönkatu 35, 00260 Helsinki</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Seuraa meitä</h3>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank"><img src="img/ikoni_facebook.png" alt="Facebook"></a>
+          <a href="https://instagram.com" target="_blank"><img src="img/ikoni_instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

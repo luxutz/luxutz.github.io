@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Move It Tanssiopisto tarjoaa monipuolisia tanssikursseja kaikenikäisille.">
+  <title>Kurssit ja aikataulut | Move It Tanssiopisto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="Rytmi & Liike Tanssiopisto logo"></a>
+    </div>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="hinnasto.html">Hinnasto</a></li>
+        <li><a href="opettajat.html">Opettajat</a></li>
+        <li><a href="kurssit.html" class="active">Kurssit ja aikataulut</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
+    <label for="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Avaa mobiilivalikko">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="hinnasto.html">Hinnasto</a></li>
+        <li><a href="opettajat.html">Opettajat</a></li>
+        <li><a href="kurssit.html" class="active">Kurssit ja aikataulut</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="kurssit-intro">
+      <h1>Kurssit ja aikataulut</h1>
+      <p>Rytmi & Liike Tanssiopisto tarjoaa laajan kattauksen tanssilajeja kaikenikäisille ja -tasoisille tanssinharrastajille. Etsi itsellesi sopiva kurssi alta ja tule mukaan nauttimaan tanssin huumasta!</p>
+  <p><strong>Miten valita sopiva taso?</strong> Alkeet ja Alkeet+ sopivat uusille harrastajille tai tauon jälkeen palaaville. Keskitaso kehittää liiketekniikkaa ja yhdistelmiä. Jatko ja Edistyneet on suunnattu kokeneille tanssijoille, jotka haluavat syventää osaamistaan. Tekniikkatunnit ja oheisharjoittelu tukevat kehittymistä kaikilla tasoilla.</p>
+      <p><strong>Ilmoittautuminen:</strong> Kurssille ilmoittaudutaan <a href="yhteystiedot.html" style="color: var(--primary);">yhteystiedot-sivun</a> ohjeiden mukaan. Tarvittaessa kysy opettajalta suositus sopivasta tasosta.</p>
+      <p><strong>Hinnat:</strong> Kaikki hinnat on koottu sivulle <a href="hinnasto.html" style="color: var(--primary); font-weight:600;">Hinnasto</a>. Kurssit ovat lukuvuoden mittaisia.</p>
+    </section>
+    <section class="kurssi-info">
+      <div class="info-grid">
+        <div>
+          <h2>Tasot</h2>
+          <ul>
+            <li><strong>Alkeet</strong> – ensimmäiset askeleet lajissa. Perusliikkeet, rytmi ja turvallinen tekniikka.</li>
+            <li><strong>Alkeet+</strong> – jatkoa alkeille. Toistetaan perusasioita ja lisätään helppoja yhdistelmiä.</li>
+            <li><strong>Keskitaso</strong> – liiketekniikka, koordinaatio ja pidemmät sarjat kehittyvät.</li>
+            <li><strong>Jatko</strong> – vaativammat kombinaatiot ja ilmaisun hiominen kokeneille harrastajille.</li>
+          </ul>
+          <p><strong>Kurssien kesto:</strong> Alkeet ja Alkeet+ 60 min • Keskitaso 75 min • Jatko 90 min.</p>
+        </div>
+        <div>
+          <h2>Lajit</h2>
+          <h3>Baletti</h3>
+          <p>Klassinen laji, joka kehittää linjauksia, voimaa ja kestävyyttä. Harjoitteet tangolla ja keskellä rakentavat hallittua ja ilmaisuvoimaista liikettä.</p>
+          <h3>Hip Hop</h3>
+          <p>Katutanssin kattotermi: groove, rytmi ja oman tyylin löytäminen. Tunnit sisältävät drills-harjoittelua ja erilaisia yhdistelmiä musiikin ehdoilla.</p>
+          <h3>Nykytanssi</h3>
+          <p>Monipuolinen ja virtaava tanssityyli, jossa hyödynnetään painonsiirtoja, lattiatekniikkaa ja improvisaatiota. Korostaa liikkeen laatua ja ilmaisua.</p>
+        </div>
+      </div>
+    </section>
+    <section class="kurssit-lista">
+      <div id="course-filter-root"></div>
+  <h2>Baletti</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Kurssin nimi</th>
+            <th>Taso</th>
+            <th>Opettaja</th>
+            <th>Päivä</th>
+            <th>Aika</th>
+            <th>Sali</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Baletti</td>
+            <td>Alkeet</td>
+            <td>Anna</td>
+            <td>Ma</td>
+            <td>17:00-<br>18:00</td>
+            <td>Sali 1</td>
+          </tr>
+          <tr>
+            <td>Baletti</td>
+            <td>Keskitaso</td>
+            <td>Anna</td>
+            <td>Ke</td>
+            <td>18:00-<br>19:30</td>
+            <td>Sali 1</td>
+          </tr>
+          <tr>
+            <td>Baletti</td>
+            <td>Alkeet+</td>
+            <td>Emilia</td>
+            <td>Pe</td>
+            <td>16:30-<br>17:30</td>
+            <td>Sali 1</td>
+          </tr>
+          <tr>
+            <td>Baletti</td>
+            <td>Jatko</td>
+            <td>Sofia</td>
+            <td>To</td>
+            <td>19:00-<br>20:30</td>
+            <td>Sali 1</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <h2>Hip Hop</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Kurssin nimi</th>
+            <th>Taso</th>
+            <th>Opettaja</th>
+            <th>Päivä</th>
+            <th>Aika</th>
+            <th>Sali</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hip Hop</td>
+            <td>Alkeet</td>
+            <td>Mikko</td>
+            <td>Ti</td>
+            <td>16:30-<br>17:30</td>
+            <td>Sali 2</td>
+          </tr>
+          <tr>
+            <td>Hip Hop</td>
+            <td>Keskitaso</td>
+            <td>Mikko</td>
+            <td>To</td>
+            <td>19:00-<br>20:30</td>
+            <td>Sali 2</td>
+          </tr>
+          <tr>
+            <td>Hip Hop</td>
+            <td>Alkeet+</td>
+            <td>Joonas</td>
+            <td>Ke</td>
+            <td>17:30-<br>18:30</td>
+            <td>Sali 2</td>
+          </tr>
+          <tr>
+            <td>Hip Hop</td>
+            <td>Jatko</td>
+            <td>Joonas</td>
+            <td>Ma</td>
+            <td>19:30-<br>21:00</td>
+            <td>Sali 2</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <h2>Nykytanssi</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Kurssin nimi</th>
+            <th>Taso</th>
+            <th>Opettaja</th>
+            <th>Päivä</th>
+            <th>Aika</th>
+            <th>Sali</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nykytanssi</td>
+            <td>Alkeet</td>
+            <td>Laura</td>
+            <td>Ma</td>
+            <td>18:00-<br>19:00</td>
+            <td>Sali 3</td>
+          </tr>
+          <tr>
+            <td>Nykytanssi</td>
+            <td>Keskitaso</td>
+            <td>Laura</td>
+            <td>Ke</td>
+            <td>19:00-<br>20:30</td>
+            <td>Sali 3</td>
+          </tr>
+          <tr>
+            <td>Nykytanssi</td>
+            <td>Alkeet+</td>
+            <td>Emilia</td>
+            <td>To</td>
+            <td>17:45-<br>18:45</td>
+            <td>Sali 3</td>
+          </tr>
+          <tr>
+            <td>Nykytanssi</td>
+            <td>Jatko</td>
+            <td>Laura</td>
+            <td>Su</td>
+            <td>14:00-<br>15:30</td>
+            <td>Sali 3</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+		<div class="footer-content">
+			<div class="footer-column">
+				<h3>Rytmi & Liike</h3>
+				<p>© 2025 Rytmi & Liike Tanssiopisto. Kaikki oikeudet pidätetään.</p>
+			</div>
+			<div class="footer-column">
+				<h3>Yhteystiedot</h3>
+				<p><a href="mailto:info@move-it.fi">info@move-it.fi</a></p>
+				<p><a href="tel:+358451234567">+358 45 1234567</a></p>
+				<p><a href="https://maps.google.com/?q=Töölönkatu+35,+00260+Helsinki" target="_blank">Töölönkatu 35, 00260 Helsinki</a></p>
+			</div>
+			<div class="footer-column">
+				<h3>Seuraa meitä</h3>
+				<div class="footer-social">
+					<a href="https://facebook.com" target="_blank"><img src="img/ikoni_facebook.png" alt="Facebook"></a>
+					<a href="https://instagram.com" target="_blank"><img src="img/ikoni_instagram.png" alt="Instagram"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+  <script src="script.js"></script>
+  <script type="module" src="react-app.js"></script>
+</body>
+</html>
